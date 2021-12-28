@@ -1,0 +1,23 @@
+<template>
+	<lightning-card title="Property Details" icon-name="standard:contact">
+			<div class="slds-p-around_small">
+					<lightning-record-view-form object-api-name={objectApiName}
+					record-id={recordId}
+					layout-type="compact" onsuccess={handleSuccess}>
+							<lightning-output-field field-name="Property__c" value={product2Id} variant="label-stacked">
+							</lightning-output-field>
+							<lightning-output-field field-name="Property_Type__c"></lightning-output-field>
+							<lightning-output-field field-name="BedRooms__c"></lightning-output-field>
+							<lightning-output-field field-name="Bathrooms__c"></lightning-output-field>
+							<lightning-output-field field-name="Rent_Amount__c"></lightning-output-field>
+							<lightning-output-field field-name="Name"></lightning-output-field>
+							<lightning-output-field field-name="City__c"></lightning-output-field>
+							<lightning-output-field field-name="State__c"></lightning-output-field>
+							
+							<!--<lightning-button type="submit" name="update" variant="brand" label="Submit Enquiery"
+									class="slds-m-top_small"></lightning-button>-->
+					</lightning-record-view-form>
+			</div>
+	</lightning-card>
+
+</template>
